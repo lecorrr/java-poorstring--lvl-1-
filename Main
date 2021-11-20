@@ -1,0 +1,23 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		int[] mas = { 123, 456, 678, 890 };
+		ars(mas);
+	}
+
+	public static void ars(int[] mas) {
+		StringBuilder st = new StringBuilder();
+		st.append('[');
+		for (int i = 0; i < mas.length; i++) {
+			st.append(mas[i]);
+			if (i == mas.length - 1) {
+				st.append(']');
+				break;
+			}
+			st.append(", ");
+		}
+		System.out.println(st);
+	}
+
+}
